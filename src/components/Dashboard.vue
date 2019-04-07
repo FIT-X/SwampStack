@@ -99,10 +99,13 @@ export default {
                         const temp = response.data.result.split(",")[0];
                         const airPressure = response.data.result.split(",")[1];
                         const lightLevel = response.data.result.split(",")[2];
+                        const waterLevel = response.data.result.split(",")[3];
+
                         const dataItem = {
                             temp: temp,
                             airPressure: airPressure,
                             lightLevel: lightLevel,
+                            waterLevel: waterLevel,
                             created: new Date().toISOString()
                         };
                         console.log(dataItem);
